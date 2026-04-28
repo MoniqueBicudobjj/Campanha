@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floresta Tropical</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #031409;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #0a3d1f;
+      padding: 15px 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 70px;
+      width: auto;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 12px 24px;
+      color: #d4e8c9;
+      text-decoration: none;
+      font-weight: 500;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      font-size: 1rem;
+    }
+
+    nav ul li a:hover {
+      background-color: #1e5c38;
+      color: #000;
+    }
+
+    .active {
+      background-color: #2e8b57;
+      color: white;
+      font-weight: 600;
+    }
+
+    .donate-btn {
+      background-color: #4caf50;
+      color: white;
+      padding: 12px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .donate-btn:hover {
+      background-color: #3d9c43;
+      transform: translateY(-2px);
+    }
+
+    .main-content {
+      display: flex;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 5%;
+      gap: 40px;
+      align-items: flex-start;
+    }
+
+    .main-content img {
+      width: 100%;
+      margin-top: 50px;
+
+      width: 500px;
+      border-radius: 8px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .text-content {
+      color: white;
+      font-size: 1.35rem;
+      line-height: 1.5;
+      flex: 1;
+    }
+
+    .text-content strong {
+      color: #4caf50;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="#" class="logo">
+      <img src="/caminho-da-sua-imagem/logo-arvore.png" alt="Logo Floresta Tropical">
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="#">INÍCIO</a></li>
+        <li><a href="#">NOTÍCIAS</a></li>
+        <li><a href="#" class="active">CONTEÚDO</a></li>
+        <li><a href="#">CONTATO</a></li>
+      </ul>
+    </nav>
+
+    <a href="#" class="donate-btn">DOE AGORA</a>
+  </header>
+
+  <div class="main-content">
+    <img src="https://i.pinimg.com/1200x/06/70/52/067052c13215e52ca1c6be55eebe87bd.jpg" alt="Floresta Amazônica">
+
+
+    <div class="text-content">
+      <p><strong>A Floresta Amazônica</strong>, na América do Sul, é a maior floresta tropical do mundo e cobre cerca de
+        5,5 milhões de quilômetros quadrados. Outras florestas importantes incluem a Floresta do Congo, na África
+        Central, e as florestas do Sudeste Asiático, que abrangem países como Indonésia e Malásia.</p>
+
+      <h2 style="color: white; margin-top: 40px; font-size: 1.8rem;">Principais Características das Florestas Tropicais
+      </h2>
+
+      <ul style="color: white; font-size: 1.35rem; line-height: 1.6; padding-left: 20px;">
+        <li><strong>Dossel Superior:</strong> Formado pelas copas das árvores mais altas, que podem ultrapassar 30
+          metros de altura. Essa camada recebe a maior parte da luz solar.</li>
+        <li><strong>Sub-bosque:</strong> Com árvores menores e arbustos que crescem abaixo do dossel. Aqui, a luz é mais
+          filtrada, o que favorece o crescimento de plantas adaptadas a pouca luminosidade.</li>
+        <li><strong>Solo da Floresta:</strong> O solo é escuro e úmido, abrigando uma grande quantidade de matéria
+          orgânica em decomposição. No entanto, ele costuma ser pobre em nutrientes devido à rápida absorção pelas
+          plantas.</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+
+</html>
