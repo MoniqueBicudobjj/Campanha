@@ -1,4 +1,4 @@
- body {
+    body {
       margin: 0;
       padding: 0;
       background-color: #031409;
@@ -71,6 +71,22 @@
       transform: translateY(-2px);
     }
 
+    .login-btn {
+      background-color: #4caf50;
+      color: white;
+      padding: 12px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .login-btn:hover {
+      background-color: #3d9c43;
+      transform: translateY(-2px);
+    }
+
     .main-content {
       display: flex;
       max-width: 1200px;
@@ -99,4 +115,10 @@
     .text-content strong {
       color: #4caf50;
       margin-top: 160px;
+    }
+
+    .auth-buttons {
+      display: flex;
+      gap: 10px;
+      align-items: center;
     }
