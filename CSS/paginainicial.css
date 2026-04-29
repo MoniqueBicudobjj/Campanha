@@ -85,6 +85,24 @@ body {
     box-shadow: 0 6px 12px rgba(76, 175, 80, 0.4);
   }
 
+  .login-btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+    
+  }
+
+  .login-btn:hover {
+    background-color: #3d9c43;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(76, 175, 80, 0.4);
+  }
+
   .titulo {
     color: #86a340;
     justify-content: center;
