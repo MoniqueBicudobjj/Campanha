@@ -11,8 +11,6 @@ body {
     color: white;
 }
 
-/* HEADER */
-
 header {
     width: 100%;
     height: 95px;
@@ -26,8 +24,6 @@ header {
 .logo img {
     width: 85px;
 }
-
-/* MENU */
 
 nav ul {
     display: flex;
@@ -50,8 +46,6 @@ nav ul li a:hover {
     color: #d7ff2f;
 }
 
-/* BOTÃO */
-
 .donate-btn {
     text-decoration: none;
     background: #9bb33d;
@@ -73,8 +67,6 @@ nav ul li a:hover {
     padding: 60px 100px;
 }
 
-/* TEXTO */
-
 .texto h1 {
     font-size: 45px;
     line-height: 1.05;
@@ -84,8 +76,6 @@ nav ul li a:hover {
 .texto span {
     color: #c8ff00;
 }
-
-/* VALORES */
 
 .valores {
     text-align: center;
@@ -117,5 +107,26 @@ nav ul li a:hover {
 }
 
 .grid button:hover {
+    background: #6a9a52;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.login-btn {
+    text-decoration: none;
+    background: #4d783b;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
     background: #6a9a52;
 }
