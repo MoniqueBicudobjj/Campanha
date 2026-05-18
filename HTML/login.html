@@ -1,51 +1,62 @@
 <!DOCTYPE html>
-<html lang="port-br">
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>criar conta</title>
-    <link rel="stylesheet" href="../CSS/login.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campanha desmatamento - Login</title>
+  <link rel="stylesheet" href="../CSS/login.css">
 </head>
+
 <body>
-    <header>
-        <a href="#" class="logo">
-          <img src="/caminho-da-sua-imagem/logo-arvore.png" alt="Logo Floresta Tropical">
-        </a>
-      
-        <nav>
-          <ul>
-            <li><a href="paginainicial.html" class="active">INÍCIO</a></li>
-            <li><a href="#">NOTÍCIAS</a></li>
-            <li><a href="conteúdo1.html">CONTEÚDO</a></li>
-            <li><a href="contato.html">CONTATO</a></li>
-          </ul>
-        </nav>
-      
-        <a href="doe.html" class="donate-btn">DOE AGORA</a>
-        <a href="login.html" class="login-btn">CRIAR CONTA</a>
-      </header>
 
-      <body>
-        <div class="login-page">
-            <div class="form">
-                <form class="register-form">
-                    <input type="password" placeholder="password" />
-                    <input type="text" placeholder="email address" />
-                    <button type="submit">create</button>
-                    <p class="message">Already registered? <a href="#">Sign In</a></p>
-                </form>
+  <header>
+    <a href="#" class="logo">
+      <img src="../IMG/logo_campanha-removebg-preview.png" alt="Logo Floresta Tropical">
+    </a>
 
-                <form class="login-form">
-                    <h2>FAÇA O LOGIN PARA INTERAGIR NO SITE!</h2>
-                    <input type="text" placeholder="NOME" />
-                    <input type="password" placeholder="SOBRENOME" />
-                    <input type="password" placeholder="EMAIL" />
-                    <input type="password" placeholder="SENHA" />
-                    <input type="password" placeholder="CONFIRMAR SENHA" />
-                    <a href="começo.html">
-                        <button type="button">CRIAR</button>
-                    </a>
-                    <h3 class="message">esqueceu a senha?</h3>
+    <nav>
+      <ul>
+        <li><a href="paginainicial.html" class="active">INÍCIO</a></li>
+        <li><a href="campanha.noticias.html">NOTÍCIAS</a></li>
+        <li><a href="conteúdo1.html">CONTEÚDO</a></li>
+        <li><a href="contato.html">CONTATO</a></li>
+      </ul>
+    </nav>
 
+    <div class="auth-buttons">
+      <a href="doe.html" class="donate-btn">DOE AGORA</a>
+      <a href="login.html" class="login-btn">LOGIN</a>
+    </div>
+  </header>
+
+  <div class="login-page">
+    <div class="form">
+
+      <form id="loginForm">
+        <h2>FAÇA O LOGIN PARA INTERAGIR NO SITE!</h2>
+        <input type="text" id="nome" placeholder="NOME" required>
+        <input type="email" id="email" placeholder="EMAIL" required>
+        <input type="password" id="senha" placeholder="SENHA" required>
+        <button type="submit">ENTRAR</button>
+        <h3 class="message"><a href="#">esqueceu a senha?</a></h3>
+        <p class="message">Não tem conta? <a href="#" id="goToRegister">Criar conta</a></p>
+        <div id="message"></div>
+      </form>
+
+      <form id="registerForm" style="display: none;">
+        <h2>Criar Conta</h2>
+        <input type="text" id="regNome" placeholder="NOME" required>
+        <input type="email" id="regEmail" placeholder="EMAIL" required>
+        <input type="password" id="regSenha" placeholder="SENHA" required>
+        <input type="password" id="regConfirmSenha" placeholder="CONFIRMAR SENHA" required>
+        <button type="submit">CRIAR</button>
+        <p class="message">Já é registrado? <a href="#" id="goToLogin">Fazer Login</a></p>
+        <div id="registerMessage"></div>
+      </form>
+
+    </div>
+  </div>
 </body>
+<script src="../JS/login.criarconta.js"></script>
 </html>
